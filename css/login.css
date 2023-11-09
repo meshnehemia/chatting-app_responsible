@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(5, 9, 29, 0.5),rgba(13, 6, 59, 0.5),rgba(17, 10, 33, 0.5)),url('https://th.bing.com/th/id/R.e9cf369fe7c5009bd6a838cac903559a?rik=ZqNm56DkokIhxg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f06%2fFree-desktop-best-wallpapers-hd.jpg&ehk=YJLZds2pdy1kyiutiR%2fLb65%2bv7Mns3bIzOR0LqH%2bsU8%3d&risl=&pid=ImgRaw&r=0');
+}
+main{
+    height: 500px;
+    width: 300px;
+    border-top: 5px solid lawngreen;
+    border-radius: 30px;
+    border-bottom: 5px solid lawngreen;
+    color: white;
+
+}
+.login{
+    background-color: transparent;
+    text-align: center;
+    margin: 10px;
+    display: block;
+}
+.login img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.login h3{
+    background: transparent;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    font-style: italic;
+    text-shadow: darkseagreen;
+    font-size:30px;
+    margin-bottom: 10px;
+}
+form{
+    display:flex;
+    flex-direction: column;
+
+}
+form input{
+    padding: 5px;
+    margin: 10px 8px 10px 8px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    border-radius: 10px;
+    color: white;
+}
+form label{
+
+}
+form a{
+    text-align: end;
+    margin-right: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 251, 0);
+
+}
+.submit{
+    margin: 10px;
+    height: 40px;
+    background-color: rgb(4, 78, 4);
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: large;
+
+}
+p a{
+    text-align: center;
+    padding: 2px 10px;
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+}
+.wrong{
+    background-color: red;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    margin:20px 10px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    display: none;
+}

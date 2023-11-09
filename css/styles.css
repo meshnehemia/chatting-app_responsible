@@ -1,0 +1,337 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.body{
+    background-image: linear-gradient(rgb(54, 85, 131), rgb(74, 65, 86),rgb(25, 26, 67));
+}
+.webidentity{
+    display: flex;
+    position: absolute;
+    top:0px;
+    left: 20px;
+    width: 98%;
+    height: 20px;
+    align-items: top;
+}
+.webidentity img {
+    width:50px;
+    height: 20px;
+}
+.personidentity {
+    display: flex;
+    position: absolute;
+    width: 98%;
+    top: 25px;
+    left: 20px;
+}
+.personidentity img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    outline:2px solid red;
+}
+.profile{
+    margin-left: 10px;
+    display: flex;
+    flex:1;
+    justify-content: space-between;
+}
+.text{
+    flex: 1;
+    margin: 10px 30px 0px 30px;
+}
+footer{
+    background-color: beige;
+    position: absolute;
+    bottom: 0px;
+    width: 98%;
+    height: 30px;
+    left: 20px;
+    display: none;
+}
+main{
+    width: 98%;
+    position: absolute;
+    top:80px ;
+    left: 20px;
+    height: 82%;
+    display: flex;
+    border-radius: 20px;
+    
+}
+.chats{
+    height: 100%;
+    flex: 1;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-image: linear-gradient(rgba(10, 10, 86,0.5),rgb(22, 22, 96,0.5),rgb(35, 35, 104,0.5)),url('https://th.bing.com/th/id/OIP.47FLZrFcUAmsziUU-VMvmwHaEo?pid=ImgDet&rs=1');
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.chatting{
+    height: 100%;
+    flex:3;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-image: linear-gradient(rgb(47, 68, 103,0.5),rgba(32, 77, 111,0.5),rgba(72, 72, 105,0.5)),url('https://th.bing.com/th/id/OIP.gCvQ1vmPVJmrq1nnzM3ZHQHaEo?pid=ImgDet&rs=1');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.nochats{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.chatheader{
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 5px 0px 5px;
+    border-bottom: 2px solid black;
+}
+.newgroup{
+    display: block;
+}
+.newgroup img {
+    height: 30px;
+    border-radius: 5px;
+}
+#search{
+    width: 90%;
+    margin:5px 0px 0px 20px;
+    height: 30px;
+    border:none;
+    border-radius: 5px;
+    border-bottom: 5px solid green;
+    padding-left: 15px;
+}
+.input{
+    border-bottom: 2px solid gray;
+    padding-bottom: 13px;
+    
+}
+.user img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    outline: 2px solid black outset;
+ 
+}
+.user{
+    margin: 10px -10px 0px 10px;
+    display: flex;
+    color:white;
+    text-decoration: none;
+}
+.user :hover{
+    background-color: grey;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius:50px;
+}
+.active{
+    background-color:rgb(51, 71, 141);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius:50px;
+}
+.details{
+    margin: 5px 0px 0px 20px;
+}
+a{
+    text-decoration: none;
+}
+.details span{
+    font-size:20px;
+}
+.details p{
+    font-size: smaller;
+}
+.devide{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    flex: 1;
+    padding-right: 20px;
+}
+.status{
+    margin-top: 5px;
+}
+.status span{
+    color:blue;
+}
+.status p {
+    background-color: green;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    padding-top: 2px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.mychats{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height:80%
+
+}
+.mychats::-webkit-scrollbar{
+    width: 0px;
+}
+@media screen and (max-width:695px){
+        .chatting{
+            display: none;
+        }
+        .chats{
+            border-radius: 15px;
+        }
+    
+}
+.images{
+    position: relative;
+}
+.images .online {
+    width: 10px;
+    height: 10px;
+    position:absolute;
+    top: 6px;
+    right:-4px;
+    border-radius: 50%;
+    animation-name: online;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+}
+@keyframes online {
+    0%{
+        background-color: rgb(217, 8, 18);
+    }
+    100%{
+        background-color: green;
+    }
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+.incoming{
+    display: flex;
+}
+
+.incoming img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.incoming p{
+    background-color: wheat;
+    margin-left: 10px;
+    margin-top: 5px;
+    border-radius: 0px 5px 5px 5px;
+    padding: 5px;
+    width: 60%;
+}
+.senderIdentity{
+    position:fixed;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    margin: 5px 0px 0px 5px;
+}
+.senderIdentity img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    outline: 2px solid red;
+}
+.senderprofile{
+    margin: 5px 0px 0px 10px;
+}
+.main{
+    position: fixed;
+    top:50px;
+    overflow-y: scroll;
+    left:0px;
+    padding: 15px 0px 0px 20px;
+    display: block;
+}
+.outgoing{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+.outgoing img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.outgoing p{
+    margin-right: 10px;
+    margin-top: 5px;
+    border-radius: 5px 0px 5px 5px;
+    padding: 5px;
+    background-color: lightgreen;
+    width: 60%;
+}
+.main::-webkit-scrollbar{
+    width: 0px;
+}
+.message{
+    display: flex;
+    width: 95%;
+    background: none;
+    position: fixed;
+    bottom: 8px;
+}
+.message .input .forms img{
+    width: 40px;
+    height: 29px;
+    border-radius: 5px;
+}
+.message .input{
+    width: inherit;
+    height: inherit;
+}
+.message .input .forms{
+    display: flex;
+    justify-content: space-between;
+}
+.forms textarea{
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+   height: 30px;
+    flex: 1;
+    margin: 1px 4px 1px 5px;
+}
+.senderIdentity a img{
+    outline: none;
+    width: 20px;
+    margin: 0px 10px 0px 0px;
+}
+@media screen and (min-width:695px) {
+    .senderIdentity a img{
+        display: none;
+    }
+}
+.groups{
+    display: block;
+}
+.groups img {
+    height: 30px;
+    border-radius: 5px;
+}
+.individaul{
+    display: block;
+}
+.individual img {
+    height: 30px;
+    border-radius: 5px;
+}
